@@ -1,19 +1,18 @@
-#1
-#PATTERN
+#1 PATTERN
 a=int(input())
 for i in range(1,a+1):
     for j in range(1,i+1):
         print(j,end=" ")
     print(' ')
-#2
-#PATTERN
+
+#2 PATTERN
 a=int(input())
 for i in range(1,a+1):
     for j in range(1,i+1):
         print(i,end=" ")
     print(' ')
-#3
-#  PALINDROME
+
+#3 PALINDROME
 n=int(input())
 t=n
 rev=0
@@ -43,7 +42,7 @@ if sum==p:
 else:
     print("Not Amstrong")
 
-# Area
+#5 Area
 l=int(input())
 b=int(input())
 if l==b:
@@ -55,7 +54,7 @@ else:
     print(f"Area of Rectangle : {a_rect}")
     print(f"Area of Triangle : {a_tri}")
 
-#Swap 3 nums in ascending 
+#6 Swap 3 nums in ascending 
 a=int(input())
 b=int(input())
 c=int(input())
@@ -71,6 +70,15 @@ if b > c:
     b = b + c
     c = b - c
     b = b - c
-
 print(a,b,c)
 
+#7 Fabinocci
+a=0
+b=1
+n=int(input('Enter the length of series :'))
+print(a,b,end=" ")
+for i in range(n):
+    c=a+b
+    print(c,end=" ")
+    b=c
+    a=b
