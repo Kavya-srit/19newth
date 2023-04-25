@@ -43,4 +43,19 @@ def d(n):
     d(n-1)
     print(n)
 
-d(8)
+#d(8)
+
+#25th
+#nth Fabinocci number using recursion
+def fabi(n):
+    if n<=0:
+        return -1
+    if n==1:
+        return 0
+    if n==2:
+        return 1
+    
+    return fabi(n-1)+fabi(n-2)
+
+print(fabi(int(input())))
+
