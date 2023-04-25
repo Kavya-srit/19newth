@@ -57,5 +57,27 @@ def fabi(n):
     
     return fabi(n-1)+fabi(n-2)
 
-print(fabi(int(input())))
+#print(fabi(int(input())))
 
+
+#SUM OF 1st 'n' fabinocci numbers
+def sumfab(n):
+    if n<=0:
+        return -1
+    if n==1:
+        return 0
+    if n==2:
+        return 1
+    
+    a=0
+    b=1
+    c=a+b
+    sum=c+1
+    a=b
+    b=c
+    
+    sumfab(n-1)
+    print(sum)
+sumfab(10)
+
+#using Reursion
